@@ -1,0 +1,16 @@
+# docker build -f src/main/docker/Dockerfile.jvm -t app-customers .
+# docker build -f src/main/docker/Dockerfile.jvm -t byronsda45/app-customers .
+FROM docker.io/eclipse-temurin:25.0.3_9-jre-alpine
+
+ENV LANGUAGE='en_US:en'
+
+RUN mkdir /app
+WORKDIR /app
+
+#Imagen con varias capas
+#Tiene una jerarquia segun cual varia mas
+#La capa que no cambia demasiado debe ir primero
+#La capa que mas cambia debe ir al final
+COPY build/libs/app-customers-0.0.1-SNAPSHOT.jar app.jar
+
+CMD ["java", "-jar", "app.jar"]
