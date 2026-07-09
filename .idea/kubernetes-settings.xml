@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="KubernetesApiSettings">
+    <option name="namespaces">
+      <list>
+        <option value="kubectl --kubeconfig C:\Users\fing.labcom\AppData\Local\JetBrains\IntelliJIdea2026.1\kubernetes\3GGalZHZeU10snwElNEflGLo0Tm\config7621782676602966857.yml --context jordifpa-dev/api-rm2-thpm-p1-openshiftapps-com:6443/jordifpa get namespace --output=json  Failed to invoke kubectl command: com.intellij.kubernetes.api.RequestFailedException: Error from server (Forbidden): namespaces is forbidden: User &quot;jordifpa&quot; cannot list resource &quot;namespaces&quot; in API group &quot;&quot; at the cluster scope" />
+      </list>
+    </option>
+  </component>
+</project>

@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
     - name: nginx-container
-      image: nginx:latest
+      image: nginxinc/nginx-unprivileged:stable-alpine
       ports:
         - containerPort: 80
