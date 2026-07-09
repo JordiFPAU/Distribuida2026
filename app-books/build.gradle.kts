@@ -52,6 +52,11 @@ dependencies {
     //Telemetria
     implementation("io.quarkus:quarkus-micrometer-registry-prometheus")
 
+    //kubernetes
+    implementation("io.quarkus:quarkus-kubernetes")
+
+    implementation("io.quarkus:quarkus-container-image-jib")
+
 }
 
 tasks.test {
